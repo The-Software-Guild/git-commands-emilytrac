@@ -1,7 +1,7 @@
 /*
  *@author emilytracey
  *date = 12/10/2022
- *purpose = practice scanner
+ *purpose = window master code along
  */
 
 package com.et.windowmaster;
