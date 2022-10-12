@@ -1,6 +1,7 @@
 /*
  *@author emilytracey
  *date = 11/10/2022
+ *purpose = operation practice
  */
 package ProgsStatsandVariables;
 
@@ -90,9 +91,9 @@ public class ProgsStatsandVariables {
 
         // result /= operand1 is equivalent to result = result / operand1.
         
-        result = 40;  // set result to 40
+        result = 40;
         result /= 4;  // result is now equal to 10 (40 / 4)
-        result /= operand1; // result is now equal to 2 (10 / 5)
+        result /= operand1;
         
         System.out.println(result);
     }
