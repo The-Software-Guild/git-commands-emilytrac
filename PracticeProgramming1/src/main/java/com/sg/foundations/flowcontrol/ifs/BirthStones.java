@@ -9,16 +9,18 @@ package com.sg.foundations.flowcontrol.ifs;
 import java.util.Scanner;
 
 public class BirthStones {
-    
+
     public static void main(String[] args) {
-        
+
         Scanner monthScanner = new Scanner(System.in);
-        
+
         System.out.println("Hey, what month were you born in? Number please! ");
         
+        // month number then convert to int
+
         String monthBorn = monthScanner.nextLine();
         int intMonth = Integer.parseInt(monthBorn);
-        
+
         if (intMonth == 1) {
             System.out.println("Your birth month is January and your birthstone is Garnet");
         } else if (intMonth == 2) {

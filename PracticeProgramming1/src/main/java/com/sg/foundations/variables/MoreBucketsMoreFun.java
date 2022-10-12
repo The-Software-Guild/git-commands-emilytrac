@@ -7,7 +7,7 @@
 package com.sg.foundations.variables;
 
 public class MoreBucketsMoreFun {
-    
+
     public static void main(String[] args) {
 
         int butterflies, beetles, bugs;
@@ -28,6 +28,6 @@ public class MoreBucketsMoreFun {
         System.out.println("Wait a minute!");
         // bugs not changing as bug number not also lowered
         System.out.println("... maybe my computer can't do math, after all!");
-        
+
     }
 }

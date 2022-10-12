@@ -7,9 +7,9 @@
 package com.sg.foundations.variables;
 
 public class AllAboutMe {
-    
+
     public static void main(String[] args) {
-    
+
         String myName = "Emily";
         String favFood = "pasta";
         int numPets = 2;
@@ -24,6 +24,6 @@ public class AllAboutMe {
         System.out.println("I live in a " + myHome + ".");
         System.out.println("It is unfortunately, " + 
                 canWhistle + " that I can whistle.");
-        
+
     }
 }

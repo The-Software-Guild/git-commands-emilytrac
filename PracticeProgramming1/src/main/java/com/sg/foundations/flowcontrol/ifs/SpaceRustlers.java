@@ -7,19 +7,19 @@
 package com.sg.foundations.flowcontrol.ifs;
 
 public class SpaceRustlers {
-    
+
     public static void main(String[] args) {
-        
+
         int spaceships = 10;
         int aliens = 25;
         int cows = 100;
-        
+
         if (aliens > spaceships) {
             System.out.println("Vroom, vroom! Let's get going!");
         } else {
             System.out.println("There aren't enough green guys to dirve these ships!");
         }
-        
+
         if (cows == spaceships) {
             System.out.println("Wow, way to plan ahead! JUST enough room for all these walking hamburgers");
         } else if (cows > spaceships) {
@@ -27,7 +27,7 @@ public class SpaceRustlers {
         } else {
             System.out.println("Too many ships! Not enough cows.");
         }
-        
+
         if (aliens > cows) {
             System.out.println("Hurrah, we've got the grub!");
         } else {
