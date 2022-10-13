@@ -23,18 +23,16 @@ public class DogGenetics {
         
         System.out.println("What is your dog's name? ");
         String dogName = userInput.nextLine();
-        
         System.out.println();
         System.out.println("Well then, I have this highly reliable report on "
                 + dogName + "'s prestigious background right here.");
-        
         System.out.println();
         System.out.println(dogName + " is: ");
         System.out.println();
         
         
         // using a while loop to find random numbers under 100 that add up to 100
-        // using Random import
+        // using Random
         
         while (true) {
             int random1 = randInput.nextInt(100) + 1;

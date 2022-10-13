@@ -27,6 +27,7 @@ public class SummativeSums {
     // method to sum elements within the array
     
     public static int arrayResult(int[] array) {
+        
         int sum = 0;
         for (int i = 0; i < array.length; i++) {
             sum += array[i];

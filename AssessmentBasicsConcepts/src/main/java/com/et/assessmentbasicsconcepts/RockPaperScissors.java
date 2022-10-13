@@ -19,10 +19,8 @@ public class RockPaperScissors {
             // use of scanner throughout to get player response 
             
             Scanner inputScanner = new Scanner(System.in);
-
             System.out.println("Hello, how many rounds of Rock, Paper, Scissors "
                     + "would you like to play? ");
-
             int numberGames = Integer.parseInt(inputScanner.nextLine());
 
             // using an if to limit the rounds to between 1 and 10
@@ -39,7 +37,6 @@ public class RockPaperScissors {
             // setting condition to break the while loop
 
             System.out.println("Would you like to play again? 'Yes' or 'No'?");
-
             String answer = inputScanner.nextLine();
 
             if (answer.equals("No")) {
@@ -122,10 +119,7 @@ public class RockPaperScissors {
                 System.out.println("You win!");
                 userWins ++;
             }
-        }
-        
-
-              
+        }     
         }
         
         // printing the results

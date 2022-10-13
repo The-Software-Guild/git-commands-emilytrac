@@ -33,6 +33,5 @@ public class HealthyHearts {
         System.out.println("Your target HR Zone is " + lowerMax 
                 + " - " + upperMax + " beats per minute.");
     }
-   
  }
 
