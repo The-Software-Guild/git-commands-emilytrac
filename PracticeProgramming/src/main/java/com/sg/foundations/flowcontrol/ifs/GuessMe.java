@@ -11,18 +11,14 @@ import java.util.Scanner;
 public class GuessMe {
 
     public static void main(String[] args) {
-
+        
+        Scanner myScanner = new Scanner(System.in);
 
         int myNumber = 8;
 
         System.out.println("I've chosen a number. Betcha can't guess it!");
-
-        Scanner myScanner = new Scanner(System.in);
-
         System.out.println("Your guess: ");
-
         String guessedNumber = myScanner.nextLine();
-
         int guess = Integer.parseInt(guessedNumber);
 
         if (guess == myNumber) {
