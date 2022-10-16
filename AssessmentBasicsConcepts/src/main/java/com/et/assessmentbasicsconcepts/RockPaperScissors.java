@@ -29,9 +29,9 @@ public class RockPaperScissors {
             if (numberGames < 1 || numberGames > 10) {
                 System.out.println("Oops! Try a number between 1 and 10!");
                 int newnumGames = Integer.parseInt(inputScanner.nextLine());
-                RPS(newnumGames);
+                rockPaperScissors(newnumGames);
             } else {
-                RPS(numberGames);
+                rockPaperScissors(numberGames);
             }
 
             // setting condition to break the while loop
@@ -50,7 +50,7 @@ public class RockPaperScissors {
 
     // rock paper scissors method to be called        
    
-    public static void RPS(int numGames) {
+    public static void rockPaperScissors(int numGames) {
         
         Scanner inputScanner = new Scanner(System.in);
         Random computerChooser = new Random();
