@@ -1,7 +1,7 @@
 /*
  *@author emilytracey
- *date = 12/10/2022
- *purpose = window master code along
+ *date = 18/10/2022
+ *purpose = window master refactor with methods
  */
 
 package com.et.windowmaster;
@@ -12,56 +12,37 @@ public class WindowMaster {
     
     public static void main(String [] args) {
         
-        float height;
-        float width;
+        float height = readValue("Please enter window height: ");
+        float width = readValue("Please enter window width: ");
+        float glass = readValue("Please enter glass cost: ");
+        float trim = readValue("Please enter trim cost: ");
+        int windows = readValueTwo("Please enter the number of windows: ");
         
-        String stringHeight;
-        String stringWidth;
+        float areaOfWindow = height * width;
+        float perimeterOfWindow = 2 * (height + width);
+        float cost = ((glass * areaOfWindow) + (trim * perimeterOfWindow)) * windows;
         
-        float glass;
-        float trim;
-        
-        String costOfGlass;
-        String costOfTrim;
-        
-        float areaOfWindow;
-        float perimeterOfWindow;
-        
-        int windows;
-        
-        String numWindows;
-        
-        float cost;
-        
-        Scanner myScanner = new Scanner(System.in);
-        
-        System.out.println("Please enter window height: ");
-        stringHeight = myScanner.nextLine();
-        System.out.println("Please enter window width: ");
-        stringWidth = myScanner.nextLine();
-        System.out.println("Please enter glass cost: ");
-        costOfGlass = myScanner.nextLine();
-        System.out.println("Please enter trim cost: ");
-        costOfTrim = myScanner.nextLine();
-        System.out.println("Please enter the number of windows: ");
-        numWindows = myScanner.nextLine();
-       
-        
-        height = Float.parseFloat(stringHeight);
-        width = Float.parseFloat(stringWidth);
-        glass = Float.parseFloat(costOfGlass);
-        trim = Float.parseFloat(costOfTrim);
-        windows = Integer.parseInt(numWindows);
-        
-        areaOfWindow = height * width;
-        perimeterOfWindow = 2 * (height + width);
-        
-        cost = ((glass * areaOfWindow) + (trim * perimeterOfWindow)) * windows;
-        
-        System.out.println("Window height = " + stringHeight);
-        System.out.println("Window width = " + stringWidth);
+        System.out.println("Window height = " + height);
+        System.out.println("Window width = " + width);
         System.out.println("Window area = " + areaOfWindow);
         System.out.println("Window perimeter = " + perimeterOfWindow);
-        System.out.println("Total Cost = " + cost);
+        System.out.println("Total Cost = £" + cost);
+    }
+    
+    public static float readValue(String prompt) {
+        
+        Scanner inputScanner = new Scanner(System.in);
+        System.out.println(prompt);
+        String input = inputScanner.nextLine();
+        float floatInput = Float.parseFloat(input);
+        return floatInput;
+    }
+    
+    public static int readValueTwo(String prompt) {
+        Scanner inputScanner = new Scanner(System.in);
+        System.out.println(prompt);
+        String input = inputScanner.nextLine();
+        int intInput = Integer.parseInt(input);
+        return intInput;
     }
 }
