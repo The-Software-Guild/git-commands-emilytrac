@@ -16,8 +16,6 @@ public class InterestCalculator {
     public static void main(String[] args) {
         
         Scanner inputScanner = new Scanner(System.in);
-        double earnedMoney = 0;
-        double endBalance = 0;
         
         System.out.println("How much do you want to invest? ");
         String investAmount = inputScanner.nextLine();
@@ -48,12 +46,12 @@ public class InterestCalculator {
             double cInterest = Math.floor((amount - principal) * 100) / 100;
             
             System.out.println("Year " + i + ": ");
-            System.out.println("Began with $" + principal);
+            System.out.println("Began with $" + Math.floor((principal) * 100 / 100));
             System.out.println("Earned $" + cInterest);
             System.out.println("Ended with $" + amount);  
             System.out.println("");
             
-            Math.floor(((principal += cInterest) * 100) / 100);
+            principal += cInterest;
         }  
     }
 }   
