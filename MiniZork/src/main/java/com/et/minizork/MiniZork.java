@@ -14,10 +14,10 @@ public class MiniZork {
         
         Scanner userInput = new Scanner(System.in);
 
-        System.out.println("You are standing in an open field west of a white house, next to a large forest");
-        System.out.println("There is a small mailbox near you.");
-        System.out.println("The house has a boarded front door.");
-        System.out.println("The forest has a smoke rising from within");
+        System.out.println("You are standing in an open field west of a white house,");
+        System.out.println("With a boarded front door.");
+        System.out.println("There is a small mailbox here.");
+        System.out.println("There is a forest in the distance");
         System.out.print("Go to the house, open the mailbox or go to the forest? ");
 
         String action = userInput.nextLine();
@@ -39,24 +39,22 @@ public class MiniZork {
                     System.out.println("You've been eaten by a grue.");
                 } else if (action.equals("run away")) {
                     System.out.println("You run away screaming across the fields - looking very foolish.");
-                    System.out.println("But you're alive. Possibly a wise choice.");
+                    System.out.println("But you alive. Possibly a wise choice.");
                 }
-            } else if (action.equals("stick your hand in ")) {
-                System.out.println("You feel something in the mailbox ");
-                System.out.println("Before you can react you are attacked ");
-                System.out.println("You've been eaten by a grue. ");
+            } else if (action.equals("stick your hand in")) { 
+                System.out.println("You've been eaten by a grue.");
             }
-        } if (action.equals("go to the house ")) { 
+        } else if (action.equals("go to the house")) { 
             System.out.println("It looks as though someone has broken into the house before ");
             System.out.println("There are warning signs scattered around ");
             System.out.println("Would you like to continue or leave? ");
-            action = userInput.nextLine();
+            action = userInput.next();
             
                 if (action.equals("continue")) {
-                System.out.println("You notice the house is making a lot of creaking noises");
-                System.out.println("There is also a sign saying the structure is unstable");
-                System.out.print("Enter the house anyway or turn back? ");
-                action = userInput.nextLine();
+                    System.out.println("You notice the house is making a lot of creaking noises");
+                    System.out.println("There is also a sign saying the structure is unstable");
+                    System.out.print("Enter the house anyway or turn back? ");
+                    action = userInput.next();
 
                 if (action.equals("enter the house")) {
                     System.out.println("Oh no! The house collapsed!");
@@ -70,17 +68,17 @@ public class MiniZork {
                 System.out.println("Good choice - you've not been crushed");
                 System.out.println("You go and explore the fields instead");
             }
-        } if (action.equals("go to the forest")); {
+        } else if (action.equals("go to the forest")) {
             System.out.println("The forest is very dark as you approach ");
             System.out.println("You hear odd whispering ");
             System.out.println("Would you like to carry on or turn back? ");
-            action = userInput.nextLine();
+            action = userInput.next();
             
                 if (action.equals("carry on")) {
                 System.out.println("The forest is growing increasingly dark");
                 System.out.println("The whispering now sounds more like chanting");
                 System.out.print("Would you like to continue or search the fields instead? ");
-                action = userInput.nextLine();
+                action = userInput.next();
 
                 if (action.equals("continue")) {
                     System.out.println("Turns out, the forest is not a nice place");
