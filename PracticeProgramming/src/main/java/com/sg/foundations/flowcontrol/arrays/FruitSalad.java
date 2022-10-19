@@ -24,40 +24,56 @@ public class FruitSalad {
         int numApples = 0;
         int numBerries = 0;
         int numFruits = 0;
+        int i = 0;
 
-        for (int i = 0; i < fruitSalad.length; i++) {
-            
-            do {
+        for (int j = 0; j < 12; j++) {
+            while(fruitSalad[j] == null && i < fruit.length) {
+                
+  
                 if (fruit[i].contains("berry")) {
-                    fruitSalad[i] = fruit[i];
+                    fruitSalad[j] = fruit[i];
                     numBerries ++;
                     numFruits ++;
+                    i ++;
                     
                 } else if (fruit[i].contains("Apple")) {
                     if (numApples < 3) {
-                        fruitSalad[i] = fruit[i];
+                        fruitSalad[j] = fruit[i];
                         numApples ++;
                         numFruits ++;
+                        i ++;
+                        
+                    } else {
+                        i ++;
                     }
                     
                 } else if (fruit[i].contains("Orange")) {
                     if (numOranges < 2) {
-                        fruitSalad[i] = fruit[i];
+                        fruitSalad[j] = fruit[i];
                         numOranges ++;
                         numFruits ++;
+                        i ++;
+                        
+                    } else {
+                        i++;
                     }
                     
                 // from remaining, as long as not tomato, add
                     
                 } else if (!fruit[i].contains("Tomato")) {
-                    fruitSalad[i] = fruit[i];
+                    fruitSalad[j] = fruit[i];
                     numFruits ++;
-                } else if (fruit[i].contains("Tomato")) {
+                    i++;
+                } else {
+                    i ++;
                 }
                 
-            } while (fruitSalad.length < 12);
+            } 
         }
         System.out.println("My fruit salad contains " + Arrays.toString(fruitSalad));
-            System.out.println("There are " + numFruits + " fruits in my fruit salad");
+        System.out.println("There are " + numFruits + " fruits in my fruit salad");
+        System.out.println("There are " + numOranges + " oranges in my fruit salad");
+        System.out.println("There are " + numApples + " apples in my fruit salad");
+        System.out.println("There are " + numBerries + " berries in my fruit salad");
     }
 }
