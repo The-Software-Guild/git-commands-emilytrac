@@ -18,16 +18,13 @@ public class InterestCalculator {
         Scanner inputScanner = new Scanner(System.in);
         
         System.out.println("How much do you want to invest? ");
-        String investAmount = inputScanner.nextLine();
-        double moneyIn = Double.parseDouble(investAmount);
+        double moneyIn = inputScanner.nextDouble();
         
         System.out.println("How many years are you investing for? ");
-        String yearsFor = inputScanner.nextLine();
-        int yearsIn = Integer.parseInt(yearsFor);
-        
+        int yearsIn = inputScanner.nextInt();
+
         System.out.println("What is the annual interest rate % growth? ");
-        String interestRate = inputScanner.nextLine();
-        double accountGrowth = (Double.parseDouble(interestRate))/100;
+        double accountGrowth = inputScanner.nextDouble();
         
         System.out.println("Calculating...");
         

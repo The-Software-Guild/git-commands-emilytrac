@@ -17,8 +17,7 @@ public class Factorizer {
         Scanner userInput = new Scanner(System.in);
         
         System.out.println("What number would you like to factor? ");
-        String numIn = userInput.nextLine();
-        int numberToFactor = Integer.parseInt(numIn);
+        int numberToFactor = userInput.nextInt();
         
         System.out.println("The factors of " + numberToFactor + " are:");
         int numOfFactors = 0;

@@ -20,8 +20,7 @@ public class LuckySevens {
         // find out how many dollars
         
         System.out.println("How many dollars do you have to bet? ");
-        String dollarIn = inputScanner.nextLine();
-        int dollarToBet = Integer.parseInt(dollarIn);
+        int dollarToBet = inputScanner.nextInt();
         
         // set up some variables
         
